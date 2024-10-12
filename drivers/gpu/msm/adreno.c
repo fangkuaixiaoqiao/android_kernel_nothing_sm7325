@@ -2941,7 +2941,7 @@ int adreno_spin_idle(struct adreno_device *adreno_dev, unsigned int timeout)
  * Caller must hold the device mutex, and must not hold the dispatcher mutex.
  */
 
-int adreno_idle(struct kgsl_device *device)
+static int adreno_idle(struct kgsl_device *device)
 {
 	struct adreno_device *adreno_dev = ADRENO_DEVICE(device);
 	int ret;
