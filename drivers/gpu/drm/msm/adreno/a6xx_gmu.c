@@ -86,7 +86,7 @@ bool a6xx_gmu_sptprac_is_on(struct a6xx_gmu *gmu)
 }
 
 /* Check to see if the GX rail is still powered */
-bool a6xx_gmu_gx_is_on(struct a6xx_gmu *gmu)
+static bool a6xx_gmu_gx_is_on(struct a6xx_gmu *gmu)
 {
 	u32 val;
 
