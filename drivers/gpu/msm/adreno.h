@@ -926,7 +926,7 @@ int adreno_switch_to_unsecure_mode(struct adreno_device *adreno_dev,
 				struct adreno_ringbuffer *rb);
 
 int adreno_spin_idle(struct adreno_device *device, unsigned int timeout);
-int adreno_idle(struct kgsl_device *device);
+static int adreno_idle(struct kgsl_device *device);
 
 int adreno_set_constraint(struct kgsl_device *device,
 				struct kgsl_context *context,
