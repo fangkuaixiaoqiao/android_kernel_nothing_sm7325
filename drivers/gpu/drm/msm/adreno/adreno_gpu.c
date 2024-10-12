@@ -130,7 +130,7 @@ out:
 	return ret;
 }
 
-int adreno_zap_shader_load(struct msm_gpu *gpu, u32 pasid)
+static int adreno_zap_shader_load(struct msm_gpu *gpu, u32 pasid)
 {
 	struct adreno_gpu *adreno_gpu = to_adreno_gpu(gpu);
 	struct platform_device *pdev = gpu->pdev;
